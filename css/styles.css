@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box; /*Aplica para los elementos con tamaño definido*/
+}
+
+body{
+  background-image: url("../images/bg-2.png");
+  font-family:monospace;
+}
+
+.main-navigation ul{
+  list-style: none; /*Saca la viñeta*/
+  margin: 0; /*Saca los margenes*/
+  padding: 0; /*Saca el relleno*/
+  text-align: left; /*Centra horizontalmente los <li> porque estos estan como display: inline-block*/
+}
+
+.main-navigation li{
+  display: inline-block; /*Hace que los <li> se conviertan en elementos "semibloque"*/
+  margin: 0 15px;
+}
+.main-navigation li a{
+  font-size: 17px;
+  color: white;
+  display: block; /*Para poder darle atributos margin, padding, etc*/
+  text-decoration: none;
+  margin-left: 100px;
+  padding: 10px 15px; /*Le aumenta el area "cliqueable" al elemento*/
+}
+
+
+.main-navigation{
+  background-color: #f05332;
+  width: 960px;
+  position: fixed;
+  left: 50%;
+  top: 0; /*lo muevo bien pegado arriba del body*/
+  transform: translateX(-50%);
+  margin: 40px 0;
+  z-index: 5;
+}
+
+.logo{
+  float: left;
+  position: fixed;
+  top: -40px;
+  left: -10px;
+}
+
+.main-section{
+  width: 960px;
+  background-color: white;
+  margin: 150px auto 0;
+  overflow: hidden;
+}
+
+.producto01{
+  width: 300px;
+  position: relative;
+  float: left;
+  margin: 15px 10px 15px 10px;
+}
+
+.producto01 img{
+  width: 100%; /*para se ajuste al tamaño del <article>*/
+}
